@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="bw-runtime">
+<locations>
+
+<location path="/D:/USED_SOFTWARE/tibco/bw65_studio/bw/6.5/config/drivers/shells/jdbc.oracle.runtime//hotfix/runtime/plugins" type="Directory"/>
+<location path="/D:/USED_SOFTWARE/tibco/bw65_studio/bw/6.5/config/drivers/shells/jdbc.oracle.runtime//runtime/plugins" type="Directory"/>
+<location path="/D:/USED_SOFTWARE/tibco/bw65_studio/bw/palettes/activespaces/7.1//hotfix/runtime/plugins" type="Directory"/>
+<location path="/D:/USED_SOFTWARE/tibco/bw65_studio/bw/palettes/activespaces/7.1//runtime/plugins" type="Directory"/>
+<location path="/D:/USED_SOFTWARE/tibco/bw65_studio/bw/palettes/sp/6.1//hotfix/runtime/plugins" type="Directory"/>
+<location path="/D:/USED_SOFTWARE/tibco/bw65_studio/bw/palettes/sp/6.1//runtime/plugins" type="Directory"/>
+
+
+<location path="D:/USED_SOFTWARE/tibco/bw65_studio/bw/6.5/system/hotfix/lib/common" type="Directory"/>
+<location path="D:/USED_SOFTWARE/tibco/bw65_studio/bw/6.5/system/lib/common" type="Directory"/>
+
+<location path="D:/USED_SOFTWARE/tibco/bw65_studio/bw/6.5/system/hotfix/palettes" type="Directory"/>
+<location path="D:/USED_SOFTWARE/tibco/bw65_studio/bw/6.5/system/palettes" type="Directory"/>
+
+<location path="D:/USED_SOFTWARE/tibco/bw65_studio/bw/6.5/system/hotfix/shared" type="Directory"/>
+<location path="D:/USED_SOFTWARE/tibco/bw65_studio/bw/6.5/system/shared" type="Profile"/>
+</locations>
+</target>
