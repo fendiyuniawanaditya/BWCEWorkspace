@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_VelzMFzLEemeDuX1Zmg9BQ" targetNamespace="http://tns.tibco.com/bw/composite/HelloBWCE.module" name="HelloBWCE.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_hInKUFzLEemeDuX1Zmg9BQ" name="hello" promote="Componenthello/hello">
+    <sca:interface.wsdl xmi:id="_hItQ8FzLEemeDuX1Zmg9BQ" interface="http://xmlns.example.com/20190412093434PLT#wsdl.interface(hello)" scaext:wsdlLocation="../Processes/hellobwce/module/hello.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_hKNFwFzLEemeDuX1Zmg9BQ" name="RestService" path="/hello" docBasePath="http://localhost:7777/HelloBWCE.module" docResourcePath="hello" basePath="/" connector="hellobwce.module.hello" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/hellobwce.module.hello-hello.json">
+      <operation xmi:id="_hKW2wFzLEemeDuX1Zmg9BQ" operationName="get" nickname="get-hello" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_hRJbQFzLEemeDuX1Zmg9BQ"/>
+      <advancedConfig xmi:id="_hKTzcFzLEemeDuX1Zmg9BQ" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_hKXd0FzLEemeDuX1Zmg9BQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_YKKooFzLEemeDuX1Zmg9BQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_YKZ5MFzLEemeDuX1Zmg9BQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_YKgm4FzLEemeDuX1Zmg9BQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_YKoisFzLEemeDuX1Zmg9BQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_YKxFkFzLEemeDuX1Zmg9BQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_YK4aUFzLEemeDuX1Zmg9BQ" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_YK-g8FzLEemeDuX1Zmg9BQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_hGXuoFzLEemeDuX1Zmg9BQ" name="Componenthello" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_hGXuoVzLEemeDuX1Zmg9BQ" processName="hellobwce.module.hello"/>
+    <sca:service xmi:id="_hIjf8FzLEemeDuX1Zmg9BQ" name="hello">
+      <sca:interface.wsdl xmi:id="_hIkHAFzLEemeDuX1Zmg9BQ" interface="http://xmlns.example.com/20190412093434PLT#wsdl.interface(hello)" scaext:wsdlLocation="../Processes/hellobwce/module/hello.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

@@ -1,0 +1,7 @@
+{
+    "records": [],
+    "resources": [{
+        "location": "Service Descriptors/hellobwce.module.hello-hello.json",
+        "type": "generated"
+    }]
+}
